@@ -10,6 +10,8 @@ class CreateHauntedHouses < ActiveRecord::Base[5.1]
       t.datetime :opening_date
       t.datetime :closing_date
       t.string :long_description
+
+      t.timestamps null: false
     end
 
   end
