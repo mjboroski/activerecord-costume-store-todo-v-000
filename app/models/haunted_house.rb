@@ -1,1 +1,3 @@
-# Create your HauntedHouse class here
+class Costume < ActiveRecord::Base[5.1]
+
+end
