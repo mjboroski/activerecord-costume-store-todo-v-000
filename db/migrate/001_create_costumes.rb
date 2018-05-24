@@ -5,5 +5,29 @@
 # 002_create_costumes.rb becomes class CreateCostumes
 
 # Define a change method in which to do the migration
-# In this change method, create columns with the correct names and 
+# In this change method, create columns with the correct names and
 # value types according to the spec
+
+class CreateCostumes < ActiveRecord::Base[5.1]
+
+  def change
+    create_table :costumes do |t|
+      name
+      price
+      size
+      image_url
+    end
+    create_table :costume_stores do |t|
+      name
+      price
+      size
+      image_url
+    end
+    create_table :haunted_houses do |t|
+      name
+      price
+      size
+      image_url
+    end
+  end
+end
